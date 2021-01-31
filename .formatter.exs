@@ -4,8 +4,10 @@ locals_without_parens = [
   add: 2,
   add: 3,
   create: 1,
+  create: 2,
 
   # Ecto.Query
+  from: 1,
   from: 2,
 
   # Ecto.Schema
@@ -59,22 +61,22 @@ locals_without_parens = [
 
   # Phoenix.Controller
   action_fallback: 1,
+  render: 1,
   render: 2,
   render: 3,
-  render: 4,
 
   # Phoenix.Endpoint
-  plug: 1,
-  plug: 2,
   socket: 2,
   socket: 3,
 
-  # Phoenix.Live{Dashboard,View}.Router
+  # Phoenix.LiveDashboard.Router
+  live_dashboard: 1,
+  live_dashboard: 2,
+
+  # Phoenix.LiveView.Router
   live: 2,
   live: 3,
   live: 4,
-  live_dashboard: 1,
-  live_dashboard: 2,
 
   # Phoenix.Router
   connect: 3,
@@ -84,7 +86,6 @@ locals_without_parens = [
   forward: 2,
   forward: 3,
   forward: 4,
-  get: 2,
   get: 3,
   get: 4,
   head: 3,
@@ -95,11 +96,10 @@ locals_without_parens = [
   options: 4,
   patch: 3,
   patch: 4,
-  pipeline: 2,
   pipe_through: 1,
+  pipeline: 2,
   plug: 1,
   plug: 2,
-  post: 2,
   post: 3,
   post: 4,
   put: 3,
@@ -107,6 +107,7 @@ locals_without_parens = [
   resources: 2,
   resources: 3,
   resources: 4,
+  trace: 3,
   trace: 4,
 
   # Phoenix.Socket
@@ -114,8 +115,6 @@ locals_without_parens = [
   channel: 3,
   connect: 2,
   connect: 3,
-  transport: 2,
-  transport: 3,
 
   # Plug.Builder
   plug: 1,
