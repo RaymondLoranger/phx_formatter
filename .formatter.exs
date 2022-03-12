@@ -73,6 +73,25 @@ locals_without_parens = [
   live_dashboard: 1,
   live_dashboard: 2,
 
+  # Phoenix.LiveView.Helpers
+  assigns_to_attributes: 2,
+  component: 2,
+  form: 1,
+  inner_block: 2,
+  live_component: 1,
+  live_component: 3,
+  live_file_input: 2,
+  live_flash: 2,
+  live_img_preview: 2,
+  live_patch: 2,
+  live_redirect: 2,
+  live_render: 3,
+  live_title_tag: 2,
+  render_block: 2,
+  render_slot: 2,
+  upload_errors: 1,
+  upload_errors: 2,
+
   # Phoenix.LiveView.Router
   live: 2,
   live: 3,
@@ -121,7 +140,14 @@ locals_without_parens = [
   plug: 2
 ]
 
+wildcard = fn glob -> Path.wildcard(glob, match_dot: true) end
+matches = fn globs -> Enum.flat_map(globs, &wildcard.(&1)) end
+except = []
+inputs = ["*.exs", "{config,lib,test}/**/*.{ex,exs}"]
+
 [
+  inputs: matches.(inputs) -- matches.(except),
+  line_length: 80,
   locals_without_parens: locals_without_parens,
   export: [locals_without_parens: locals_without_parens]
 ]
