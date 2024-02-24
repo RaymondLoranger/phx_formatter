@@ -10,26 +10,6 @@ locals_without_parens = [
   from: 1,
   from: 2,
 
-  # Ecto.Schema
-  belongs_to: 2,
-  belongs_to: 3,
-  embeds_many: 2,
-  embeds_many: 3,
-  embeds_many: 4,
-  embeds_one: 2,
-  embeds_one: 3,
-  embeds_one: 4,
-  field: 1,
-  field: 2,
-  field: 3,
-  has_many: 2,
-  has_many: 3,
-  has_one: 2,
-  has_one: 3,
-  many_to_many: 2,
-  many_to_many: 3,
-  timestamps: 1,
-
   # EEx
   function_from_file: 3,
   function_from_file: 4,
@@ -39,63 +19,6 @@ locals_without_parens = [
   broadcast: 3,
   broadcast!: 3,
   intercept: 1,
-
-  # Phoenix.ChannelTest
-  assert_broadcast: 2,
-  assert_broadcast: 3,
-  assert_push: 2,
-  assert_push: 3,
-  assert_reply: 2,
-  assert_reply: 3,
-  assert_reply: 4,
-  refute_broadcast: 2,
-  refute_broadcast: 3,
-  refute_push: 2,
-  refute_push: 3,
-  refute_reply: 2,
-  refute_reply: 3,
-  refute_reply: 4,
-
-  # Phoenix.ConnTest
-  assert_error_sent: 2,
-
-  # Phoenix.Controller
-  action_fallback: 1,
-  render: 1,
-  render: 2,
-  render: 3,
-
-  # Phoenix.Endpoint
-  socket: 2,
-  socket: 3,
-
-  # Phoenix.LiveDashboard.Router
-  live_dashboard: 1,
-  live_dashboard: 2,
-
-  # Phoenix.LiveView.Helpers
-  assigns_to_attributes: 2,
-  component: 2,
-  form: 1,
-  inner_block: 2,
-  live_component: 1,
-  live_component: 3,
-  live_file_input: 2,
-  live_flash: 2,
-  live_img_preview: 2,
-  live_patch: 2,
-  live_redirect: 2,
-  live_render: 3,
-  live_title_tag: 2,
-  render_block: 2,
-  render_slot: 2,
-  upload_errors: 1,
-  upload_errors: 2,
-
-  # Phoenix.LiveView.Router
-  live: 2,
-  live: 3,
-  live: 4,
 
   # Phoenix.Router
   connect: 3,
@@ -129,15 +52,92 @@ locals_without_parens = [
   trace: 3,
   trace: 4,
 
+  # Phoenix.Controller
+  action_fallback: 1,
+  render: 1,
+  render: 2,
+  render: 3,
+
+  # Plug.Builder
+  plug: 1,
+  plug: 2,
+
+  # Phoenix.Endpoint
+  socket: 2,
+  socket: 3,
+
   # Phoenix.Socket
   channel: 2,
   channel: 3,
   connect: 2,
   connect: 3,
 
-  # Plug.Builder
-  plug: 1,
-  plug: 2
+  # Phoenix.ChannelTest
+  assert_broadcast: 2,
+  assert_broadcast: 3,
+  assert_push: 2,
+  assert_push: 3,
+  assert_reply: 2,
+  assert_reply: 3,
+  assert_reply: 4,
+  refute_broadcast: 2,
+  refute_broadcast: 3,
+  refute_push: 2,
+  refute_push: 3,
+  refute_reply: 2,
+  refute_reply: 3,
+  refute_reply: 4,
+
+  # Phoenix.ConnTest
+  assert_error_sent: 2,
+
+  # Phoenix.LiveDashboard.Router
+  live_dashboard: 1,
+  live_dashboard: 2,
+
+  # Phoenix.LiveView.Helpers
+  assigns_to_attributes: 2,
+  component: 2,
+  form: 1,
+  inner_block: 2,
+  live_component: 1,
+  live_component: 3,
+  live_file_input: 2,
+  live_flash: 2,
+  live_img_preview: 2,
+  live_patch: 2,
+  live_redirect: 2,
+  live_render: 3,
+  live_title_tag: 2,
+  render_block: 2,
+  render_slot: 2,
+  upload_errors: 1,
+  upload_errors: 2,
+
+  # Phoenix.LiveView.Router
+  live: 2,
+  live: 3,
+  live: 4,
+
+  # Ecto.Schema
+  belongs_to: 2,
+  belongs_to: 3,
+  embeds_many: 2,
+  embeds_many: 3,
+  embeds_many: 4,
+  embeds_one: 2,
+  embeds_one: 3,
+  embeds_one: 4,
+  field: 1,
+  field: 2,
+  field: 3,
+  has_many: 2,
+  has_many: 3,
+  has_one: 2,
+  has_one: 3,
+  many_to_many: 2,
+  many_to_many: 3,
+  timestamps: 1
 ]
 
 wildcard = fn glob -> Path.wildcard(glob, match_dot: true) end
