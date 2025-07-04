@@ -4,7 +4,7 @@ defmodule PhxFormatter.MixProject do
   def project do
     [
       app: :phx_formatter,
-      version: "0.1.8",
+      version: "0.1.9",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       name: "Phx Formatter",
