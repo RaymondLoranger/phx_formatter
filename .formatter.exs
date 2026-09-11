@@ -141,7 +141,7 @@ locals_without_parens = [
 ]
 
 [
-  inputs: ["*.exs", "{config,lib,test}/**/*.{ex,exs}"],
+  inputs: ["*.exs", "{lib,test}/**/*.{ex,exs}"],
   line_length: 80,
   locals_without_parens: locals_without_parens,
   export: [locals_without_parens: locals_without_parens]
